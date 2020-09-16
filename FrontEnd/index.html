@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital@1&family=Lobster&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Survey Form</title>
+</head>
+<body>
+    <!-- Background Image -->
+    <div class="bg">
+        <div class="container border border-primary">
+            <h2 class="title text-center">Seminar Survey Form</h2>
+            <p class="title text-center"> Thank you for helping us improve! </p>
+        </div>
+
+        <div class="container border border-primary">
+            <form>
+                <div class="form-group">
+                    <label for="name">Name<span class="required_field">*</span></label>
+                    <input type="name" class="form-control required" id="exampleInputName" placeholder="John Kurr" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="exampleInputEmail1">Email address<span class="required_field">*</span></label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="john@mail.com" required>
+                    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                </div>
+
+                <div class="form-group">
+                    <label for="age">Age</label>
+                    <input type="age" class="form-control" id="exampleInputAge" placeholder="27">
+                </div>
+
+                <div class="form-group dropdown">
+                    <label for="dropdownMenuButton">Which option best describes your current role?</label><br>
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Select current role
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <a class="dropdown-item" href="#">Student</a>
+                    <a class="dropdown-item" href="#">Researcher</a>
+                    <a class="dropdown-item" href="#">Staff Member</a>
+                    </div>
+                </div>
+
+                <!-- Group of default radios - option 1 -->
+                <div class="form-group">
+                    <p>Do you recommend our conference to your friends?</p>
+                    <div class="custom-control custom-radio">
+                        <input type="radio" class="custom-control-input" id="defaultGroupExample1" name="groupOfDefaultRadios" checked>
+                        <label class="custom-control-label" for="defaultGroupExample1">Definitely</label>
+                    </div>
+                    
+                    <!-- Group of default radios - option 2 -->
+                    <div class="custom-control custom-radio">
+                        <input type="radio" class="custom-control-input" id="defaultGroupExample2" name="groupOfDefaultRadios">
+                        <label class="custom-control-label" for="defaultGroupExample2">Maybe</label>
+                    </div>
+                    
+                    <!-- Group of default radios - option 3 -->
+                    <div class="custom-control custom-radio">
+                        <input type="radio" class="custom-control-input" id="defaultGroupExample3" name="groupOfDefaultRadios">
+                        <label class="custom-control-label" for="defaultGroupExample3">Not sure</label>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <p>What would you like to see improved? <small>(You can choose multiple items)</small></p>
+                    <!-- First Option-->
+                    <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="defaultUncheckedDisabled2">
+                        <label class="custom-control-label" for="defaultUncheckedDisabled2">Time of the conference</label>
+                    </div>
+                    
+                    <!-- Second Option -->
+                    <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="defaultCheckedDisabled2">
+                        <label class="custom-control-label" for="defaultCheckedDisabled2">Quality of the workshops</label>
+                    </div>
+                </div>
+
+                <!-- Extra Comments -->
+                <label for="text_box" class="form-group">Do you have any extra suggestions?</label>
+                <div class="input-group">
+                    <!-- <div class="input-group-prepend">
+                        <span class="input-group-text">Any extra comment/ suggestion?</span>
+                    </div> -->
+                    <textarea class="form-control" id="text_box" aria-label="With textarea"></textarea>
+                </div>
+
+                <!-- Submit button -->
+                <div class="form-group form-check">
+                    <input type="checkbox" class="form-check-input" id="exampleCheck1" required>
+                <label class="form-check-label" for="exampleCheck1">I accept the terms and agreements.</label>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+
+            </form>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>  
+</body>
+</html>
