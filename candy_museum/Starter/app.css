@@ -1,0 +1,60 @@
+body{
+    background: rgb(245, 196, 220);
+    font-family: Nuninto, sans-serif;
+}
+.navbar{
+    font-size: 1.5rem;
+    font-weight: 100;
+}
+
+#mainNavbar_brand{
+    color: red;
+}
+
+#mainNavbar .nav-link{
+    color: white;
+} 
+
+#mainNavbar .nav-link:hover{
+    color: red;
+} 
+
+.red_slash{
+    color:red;
+}
+
+.title_text{
+    color: white;
+}
+
+body, html{
+    width: 100%;
+}
+
+#image_1{
+    background: url(./imgs/hand2.png);
+
+  
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: auto;
+    opacity: 1;
+}
+
+h1{
+    font-weight: 50;
+    font-size: 3rem;
+}
+
+.navbar.scrolled{
+    background-color: rgba(155, 26, 97, 1);
+    transition: background-color 500ms;
+}
+
+@media(max-width: 1200px){
+    h1{
+        font-weight: 50;
+        font-size: 2rem;
+    }
+}
